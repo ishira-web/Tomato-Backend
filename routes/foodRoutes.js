@@ -16,7 +16,7 @@ const foodRouter = express.Router();
 
  foodRouter.post("/add",upload.single("image"),addFood);
  foodRouter.get("/list",listFood); // Assuming you have a listFood function in your controller
- foodRouter.delete("/remove/:id",removeFood); // Assuming you have a removeFood function in your controller
+ foodRouter.post("/remove",removeFood); // Assuming you have a removeFood function in your controller
 
 
 
